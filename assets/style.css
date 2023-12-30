@@ -1,0 +1,473 @@
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  body
+  
+  body::-webkit-scrollbar-track {
+    background: orange;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: blue;    
+    border-radius: 20px;       
+    border: 4px solid orange; 
+  }
+.navbar{
+    position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+ 
+}
+
+.navbar-nav {
+    position: relative;
+    margin: auto;
+    
+}
+
+.navbar-nav li {
+    position: relative;
+}
+
+.navbar-nav li::after {
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 10%;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+    opacity: 0; /* Initially hide the underline */
+}
+
+.navbar-nav li:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+
+
+.logo img{
+    width: 100px;
+    height: 70px;
+    
+}
+*{
+    padding: 0px;
+    margin: 0px ;
+    scroll-behavior: smooth;
+
+ 
+}
+.navbar-nav li{
+  font-size:large ;
+  padding-inline:20px;
+  
+}
+
+.social-icon  li{
+    list-style: none;
+    display: inline-block;
+    margin:20px 15px;
+    width:40px;
+    height: 30px;
+    padding:3px  10px;
+    border:1px solid white;
+    border-radius: 100%;
+
+}
+.social-icon{
+    margin-left: -60px;
+}
+ .social-icon li:hover{
+    border:1px solid deeppink;
+    transition: 0.3s;
+    box-shadow: 3px 3px 5px black;
+   
+} 
+
+.name{
+    font-size:50px;
+}
+ .hire{
+    width: 200px;
+    height: 40px;
+  border:1px solid deeppink;
+  color: white;
+  
+  background-image: linear-gradient(to bottom right,blue,deeppink);
+}
+.hire:hover{
+  box-shadow: 5px 5px 10px black;
+    transition: 0.4s;
+}
+.hero-content{
+margin-top:100px;
+margin-inline: 40px;
+
+}
+.hero-image-content{
+    background-image: linear-gradient(#7330fa 50%,#85ace5);
+    overflow: none;
+    border-top-left-radius:250%;
+    border-top-right-radius:10%;
+    border-bottom-left-radius: 20%;
+    height: 130%;
+    
+}
+.ani{
+    font-size: 30px;
+    margin-left: -300px;
+    color:#7330fa;
+    animation: animate__rotateOut 100s infinite;
+}
+.ani-2{
+    font-size: 30px;
+    color:darkcyan;
+    margin-top: 300px;
+    margin-left: -400px;
+    animation: ani 100s infinite;
+    
+}
+.ani-3{
+    font-size: 30px;
+    color:gold;
+    margin-top: 200px;
+    animation: mine 100s infinite;
+}
+.ani-4{
+    margin-top: -100px;
+    margin-inline: 200px;
+  font-size: 30px;
+  animation: small 100s infinite;
+}
+.ani-5{
+    margin-top: 50px;
+    margin-inline: -220px;
+  font-size: 30px;
+  animation: big 100s infinite;
+}
+
+@keyframes animate__rotateOut {
+    0% {
+        transform: rotate(0deg);
+        color:lightcoral;
+      }
+      50% {
+        transform: rotate(-160deg);
+        color:goldenrod;
+        font-size: 20px;
+      }
+      100%{
+        transform: rotate(0deg);
+        color:darkseagreen;
+        font-size: 10px;
+      }
+}
+@keyframes small{
+    0% {
+        transform: rotate(0deg);
+        color:darkseagreen;
+      }
+      50% {
+        transform: rotate(-30deg);
+        color:orchid;
+        font-size: 20px;
+      }
+      100%{
+        transform: rotate(0deg);
+        color:darkorchid;
+        font-size: 10px;
+      }
+}
+@keyframes big{
+    0% {
+        transform: rotate(0deg);
+        color:orange;
+      }
+      50% {
+        transform: rotate(-90deg);
+        color:khaki;
+        font-size: 20px;
+      }
+      100%{
+        transform: rotate(0deg);
+        color:lightsalmon;
+        font-size:10px;
+      }
+}
+@keyframes mine {
+    0% {
+        transform: rotate(0deg);
+        color:gold;
+      }
+      50% {
+        transform: rotate(110deg);
+        color:red;
+        font-size: 20px;
+      }
+      100%{
+        transform: rotate(0deg);
+        color:darkseagreen;
+        font-size: 10px;
+      }
+}
+@keyframes ani {
+   0% {
+    transform: rotate(0deg);
+    color:deeppink;
+  }
+  50% {
+    transform: rotate(50deg);
+    color:orangered;
+    font-size: 20px;
+  }
+  100%{
+    transform: rotate(0deg);
+    color:cyan;
+    font-size: 10px;
+  }
+}
+
+.hero-image img{
+    width:70%;
+    height: 100%;
+   margin-inline: 25%;
+   margin-top: -40%;
+  border-radius:50% ;
+
+}
+.about-image {
+    width:30%;
+    height: 30vh;
+    margin:30px 100px;
+    border-radius:12px ;
+}
+.about-content{
+    margin:100px 0px;
+}
+.about{
+margin-top: 1.5em;
+}
+h1{
+    margin-bottom: 2em;
+}
+.skill-container{
+    margin: 20%;
+}
+
+.skillbar {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    transition: 2s;
+}
+
+.skillbar-bar:before {
+    background: #eee;
+    content: "";
+    height: 3px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    transition: 2s;
+
+}
+
+.skillbar-bar {
+    height: 3px;
+    width: 200px;
+    background: #323232;
+    transition-property: width, background-color;
+    transition: 2s;
+}
+
+.skillbar-title {
+    color: #323232;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: 2s;
+}
+
+.skill-bar-percent {
+    float: right;
+    display: inline-block;
+    color: #323232;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 2s;
+   
+}
+
+/* CENTERING ONLY */
+
+.wrapper {
+    transition: 2s;
+    position: absolute;
+    transform: translateX(-10%) translateY(-50%);
+    
+    
+}
+.skill-label{
+    margin:40px;
+ 
+}
+.education {
+    margin-block:100px;
+}
+.accordion-header button{
+    background-image: linear-gradient(to bottom right,#2E3192 , #1BFFFF);
+    color:white;
+    box-shadow: 2px 2px 3px black;
+    border: 1px solid black;
+}
+.accordion-header button:hover{
+    box-shadow: 0 5px 10px black;
+}
+
+.accordion-body th,td,tr{
+    border:none;  
+}
+.about li{
+   list-style: none;
+   display: inline-block;
+   color:deeppink
+}
+.con-form input  {
+        margin-block:20px;
+        width: 35%;
+        height: 40px;
+        background-color:aliceblue;
+        box-shadow: 1px 1px 1px blue;
+        position: relative;
+    }
+    .con-form input:hover  {
+        box-shadow: 0 3px 5px blueviolet;
+    }
+    .con-form  textarea{
+        margin-block:20px;
+        width: 35%;
+        background-color: aliceblue;
+        box-shadow: 1px 1px 1px blue;
+    }
+    .con-form  textarea:hover{
+        box-shadow: 0 3px 5px blueviolet;
+    }
+    .con-form button{
+        width: 150px;
+        height: 40px;
+        box-shadow: 0px 5px 5px black;
+        margin-block: 30px;
+        margin-inline: auto;
+
+    }
+    .links li a{
+           
+            text-decoration: none;
+         color: grey;
+    }
+   
+    .footer{
+        background-color: #323232;
+        margin: 0px;
+        padding-block: 2%;
+    }
+    .links li{
+       list-style: none;
+       margin:20px;
+       color:grey;
+
+    }
+    .copy-right{
+        text-align: center;
+        color: gray;
+        margin: 20px;
+    }
+    .follow-cont{
+       margin-right:30px ;
+    }
+   .follow-me{
+    color:gray;
+   }
+    .follow{
+        margin-inline:-20%;
+    }
+    .follow li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+        
+}
+
+@media (max-width: 575.98px) { 
+    .top-icon li{
+        list-style: none;
+        display: inline;
+        margin:10px 10px;
+        width:40px;
+        height: 30px;
+        padding:3px  10px;
+        border:1px solid white;
+        border-radius: 100%;
+    }
+ 
+ .logo{
+    display: none;
+ }
+    .name1{
+        font-size: 15px;
+    }
+    .name2{
+        font-size: 20px;
+    }
+    .name3{
+        font-size: 15px;
+    }
+    .about-image {
+        width:40%;
+        height: 30vh;
+        margin:30px 100px;
+    }
+    .container{
+        margin-inline: -80px;
+    }
+   .about-con svg{
+    width: 20px;
+    height: 20px;
+    margin: -40px;
+   }
+   .con-cot{
+    float: right;
+    margin-top: -390px;
+   }
+   .con-form input{
+    width: 90%;
+   }
+   .con-form textarea{
+    width: 90%;
+   }
+   .con-form button{
+    margin: 10px;
+   }
+   .footer div{
+    margin-block: 10px;
+   }
+   .follow-cont {
+        margin-inline: 30px;
+        padding-inline:20px ;
+   }
+   .follow{
+    margin-left: -50px;
+   }
+   .follow-cont p {
+   margin-block: -20px;
+   }
+ }
