@@ -1,7 +1,9 @@
 body::-webkit-scrollbar {
     width: 12px;               /* width of the entire scrollbar */
   }
-  body
+  body{
+  overflow-x: hidden;
+  }
   
   body::-webkit-scrollbar-track {
     background: orange;        /* color of the tracking area */
