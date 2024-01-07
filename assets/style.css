@@ -2,7 +2,7 @@ body::-webkit-scrollbar {
     width: 12px;               /* width of the entire scrollbar */
   }
   body{
-  background-color:red;
+overflow:hidden;
   }
   
   body::-webkit-scrollbar-track {
