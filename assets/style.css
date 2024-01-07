@@ -1,9 +1,10 @@
+
 body::-webkit-scrollbar {
     width: 12px;               /* width of the entire scrollbar */
   }
-  body{
-overflow-x:hidden;
-  }
+body{
+    overflow-x:hidden;
+}
   
   body::-webkit-scrollbar-track {
     background: orange;        /* color of the tracking area */
@@ -55,15 +56,18 @@ overflow-x:hidden;
 .logo img{
     width: 100px;
     height: 70px;
-    
+}
+.logo img:hover{
+  border:1px solid black;
+  box-shadow: 0 5px 10px black;
+  transition: 1.5;
 }
 *{
     padding: 0px;
     margin: 0px ;
     scroll-behavior: smooth;
-
- 
 }
+
 .navbar-nav li{
   font-size:large ;
   padding-inline:20px;
@@ -74,8 +78,8 @@ overflow-x:hidden;
     list-style: none;
     display: inline-block;
     margin:20px 15px;
-    width:40px;
-    height: 30px;
+    width:50px;
+    height: 35px;
     padding:3px  10px;
     border:1px solid white;
     border-radius: 100%;
@@ -85,12 +89,29 @@ overflow-x:hidden;
     margin-left: -60px;
 }
  .social-icon li:hover{
-    border:1px solid deeppink;
-    transition: 0.3s;
-    box-shadow: 3px 3px 5px black;
+    border:1.5px solid deeppink;
+    
    
 } 
 
+.name3 {
+    font-size: 30px;
+    white-space: nowrap;
+    color:deeppink;
+    overflow: hidden;
+    width: 0;
+    animation: revealText 5s linear infinite;
+}
+
+@keyframes revealText {
+    0% {
+        width: 0;
+    }
+    
+    100% {
+        width: 100%;
+    }
+}
 .name{
     font-size:50px;
 }
@@ -99,15 +120,15 @@ overflow-x:hidden;
     height: 40px;
   border:1px solid deeppink;
   color: white;
-  
-  background-image: linear-gradient(to bottom right,blue,deeppink);
+  border: 1px solid black;
+  background-image: linear-gradient(to bottom right,deeppink 10%,black );
 }
 .hire:hover{
   box-shadow: 5px 5px 10px black;
     transition: 0.4s;
 }
 .hero-content{
-margin-top:100px;
+margin-top:10%;
 margin-inline: 40px;
 
 }
@@ -253,12 +274,14 @@ margin-inline: 40px;
 }
 .about{
 margin-top: 1.5em;
+
 }
 h1{
     margin-bottom: 2em;
 }
 .skill-container{
-    margin: 20%;
+  margin: 30% ;
+  margin-inline: 15%;
 }
 
 .skillbar {
@@ -308,9 +331,6 @@ h1{
     transition: 2s;
    
 }
-
-/* CENTERING ONLY */
-
 .wrapper {
     transition: 2s;
     position: absolute;
@@ -347,18 +367,19 @@ h1{
         margin-block:20px;
         width: 35%;
         height: 40px;
-        background-color:aliceblue;
-        box-shadow: 1px 1px 1px blue;
+
+        box-shadow: 1px 1px 10px blue;
         position: relative;
+       
     }
     .con-form input:hover  {
-        box-shadow: 0 3px 5px blueviolet;
+        box-shadow: 0px 3px 5px bluev;        
     }
     .con-form  textarea{
         margin-block:20px;
         width: 35%;
         background-color: aliceblue;
-        box-shadow: 1px 1px 1px blue;
+        box-shadow: 1px 1px 10px blue;
     }
     .con-form  textarea:hover{
         box-shadow: 0 3px 5px blueviolet;
@@ -377,10 +398,11 @@ h1{
          color: grey;
     }
    
-    .footer{
+     .footer{
         background-color: #323232;
-        margin: 0px;
-        padding-block: 2%;
+     width:100%;
+     padding: 2% 4%;
+        
     }
     .links li{
        list-style: none;
@@ -407,36 +429,87 @@ h1{
     display: inline-block;
     padding: 10px;
         
-}
+} 
 
-@media (max-width: 768.98px) { 
+
+#btn{
+    margin: 2rem;
+    width: 200px;
+     background-image: linear-gradient(to bottom right,deeppink 10%,black );
+}
+@media (max-width:768.98px) { 
     .top-icon li{
         list-style: none;
         display: inline;
-        margin:10px 25px;
+        margin:30px 25px;
         width:40px;
         height: 30px;
         padding:3px  10px;
         border:1px solid white;
         border-radius: 100%;
     }
+   body{
+    overflow-x: hidden;
+    
+}
+#btn{
+    margin: 2rem;
+    width: 200px;
+     background-image: linear-gradient(to bottom right,deeppink 10%,black );
+}
+*{
+    font-size:large;
  
+}
+.h4,.h5{
+    font-size:medium;
+}
+
  .logo{
     display: none;
  }
+ .hero-container{
+    display: flex;
+    flex-direction:column;
+ }
+ .hero-content{
+    width: 100%;
+    margin-top:40%;
+    margin-inline: 15%;
+    order: 2;
+ }
+ .hero-image-content{
+    background-image: linear-gradient(#7330fa 50%,#85ace5);
+    overflow: none;
+    border-top-left-radius:250%;
+    border-top-right-radius:10%;
+    border-bottom-left-radius: 20%;
+    height: 130%;
+    
+   
+ }
+ .hire{
+    width: 300px;
+    height: 40px;
+    color: white;
+ }
+ 
     .name1{
-        font-size: 15px;
-    }
-    .name2{
         font-size: 20px;
     }
-    .name3{
-        font-size: 15px;
+    .name2{
+        font-size: 30px;
     }
+    .name3{
+        font-size: 20px;
+    }
+   
+    
     .about-image {
-        width:40%;
+        width:70%;
         height: 30vh;
-        margin:30px 100px;
+       margin-bottom: 70%;
+       margin-inline:auto;
     }
     .container{
         margin-inline: -80px;
