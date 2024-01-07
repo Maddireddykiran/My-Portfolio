@@ -60,7 +60,7 @@ body{
 .logo img:hover{
   border:1px solid black;
   box-shadow: 0 5px 10px black;
-  transition: 1.5;
+  transition: 1.5s;
 }
 *{
     padding: 0px;
