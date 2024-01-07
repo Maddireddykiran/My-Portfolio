@@ -407,11 +407,11 @@ h1{
         
 }
 
-@media (max-width: 575.98px) { 
+@media (max-width: 768.98px) { 
     .top-icon li{
         list-style: none;
         display: inline;
-        margin:10px 10px;
+        margin:10px 25px;
         width:40px;
         height: 30px;
         padding:3px  10px;
