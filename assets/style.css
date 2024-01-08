@@ -43,7 +43,7 @@ body{
     left: 50%;
     transform: translateX(-50%);
     transition: width 0.3s ease;
-    opacity: 0; /* Initially hide the underline */
+    opacity: 0; 
 }
 
 .navbar-nav li:hover::after {
@@ -442,13 +442,13 @@ h1{
     width: 200px;
      background-image: linear-gradient(to bottom right,deeppink 10%,black );
 }
-@media (max-width:576px){ 
+@media (max-width:576px)  { 
     .top-icon li{
         list-style: none;
         display: inline;
         margin:30px 25px;
         width:40px;
-        height: 50px;
+        height: 40px;
         padding:3px  10px;
         border:1px solid white;
         border-radius: 50%;
@@ -568,10 +568,18 @@ h1{
    }
    .acc-edu{
     width: 80vw;
+
    }
    .name5{
     margin-top: 2rem;
    }
    .acc-ach{
     width: 80vw;   }
- }
+ } 
+ 
+
+@media (max-width: 768px) {
+    .education {
+        flex-direction: column;
+    }
+}
