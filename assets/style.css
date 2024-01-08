@@ -442,7 +442,7 @@ h1{
     width: 200px;
      background-image: linear-gradient(to bottom right,deeppink 10%,black );
 }
-@media (max-width:576px)  { 
+@media  (max-width:576px)  { 
     .top-icon li{
         list-style: none;
         display: inline;
@@ -562,7 +562,10 @@ h1{
    .follow-cont p {
    margin-block: -20px;
    }
-  
+    .education{
+    display: flex;
+    flex-direction: column;
+   }
    .acc-edu{
     width: 80vw;
 
@@ -571,12 +574,7 @@ h1{
     margin-top: 2rem;
    }
    .acc-ach{
-    width: 80vw;   }
- } 
- 
-
-@media (max-width: 768px) {
-    .education {
-        flex-direction: column;
-    }
+    width: 80vw;
+} 
 }
+ 
