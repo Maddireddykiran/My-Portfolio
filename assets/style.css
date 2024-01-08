@@ -442,7 +442,7 @@ h1{
     width: 200px;
      background-image: linear-gradient(to bottom right,deeppink 10%,black );
 }
-@media (max-width:560px){ 
+@media (max-width:576px){ 
     .top-icon li{
         list-style: none;
         display: inline;
