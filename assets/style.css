@@ -78,11 +78,11 @@ body{
     list-style: none;
     display: inline-block;
     margin:20px 15px;
-    width:50px;
-    height: 35px;
+    width:40px;
     padding:3px  10px;
-    border:1px solid white;
-    border-radius: 100%;
+    border:2px solid deeppink;
+    border-radius: 50%;
+    background-color: black;
 
 }
 .social-icon{
@@ -90,7 +90,9 @@ body{
 }
  .social-icon li:hover{
     border:1.5px solid deeppink;
-    
+   color: black;
+    background-color: white;
+    transition: 1.5s;
    
 } 
 
@@ -363,6 +365,9 @@ h1{
    display: inline-block;
    color:deeppink
 }
+#Forms{
+    margin-top: -20px;
+}
 .con-form input  {
         margin-block:20px;
         width: 35%;
@@ -443,7 +448,7 @@ h1{
         display: inline;
         margin:30px 25px;
         width:40px;
-        height: 30px;
+        height: 40px;
         padding:3px  10px;
         border:1px solid white;
         border-radius: 100%;
@@ -452,6 +457,7 @@ h1{
     overflow-x: hidden;
     
 }
+
 #btn{
     margin: 2rem;
     width: 200px;
@@ -459,6 +465,7 @@ h1{
 }
 *{
     font-size:large;
+  
  
 }
 .h4,.h5{
@@ -479,8 +486,10 @@ h1{
     order: 2;
  }
  .hero-image-content{
-    background-image: linear-gradient(#7330fa 50%,#85ace5);
-    overflow: none;
+    background-image: none;
+    background-size: cover;
+
+    overflow-x:hidden;
     border-top-left-radius:250%;
     border-top-right-radius:10%;
     border-bottom-left-radius: 20%;
@@ -489,7 +498,7 @@ h1{
    
  }
  .hire{
-    width: 300px;
+    width: 330px;
     height: 40px;
     color: white;
  }
@@ -512,7 +521,7 @@ h1{
        margin-inline:auto;
     }
     .container{
-        margin-inline: -80px;
+        margin-inline: -85px;
     }
    .about-con svg{
     width: 20px;
@@ -521,7 +530,7 @@ h1{
    }
    .con-cot{
     float: right;
-    margin-top: -390px;
+    
    }
    .con-form input{
     width: 90%;
@@ -532,12 +541,20 @@ h1{
    .con-form button{
     margin: 10px;
    }
+   .footer{
+    background-color: #323232;
+ min-width:120%;
+ max-width: 100%;
+ overflow-x: hidden;
+ padding: 2% 4%;
+}
    .footer div{
     margin-block: 10px;
    }
    .follow-cont {
         margin-inline: 30px;
         padding-inline:20px ;
+       
    }
    .follow{
     margin-left: -50px;
@@ -545,4 +562,16 @@ h1{
    .follow-cont p {
    margin-block: -20px;
    }
+   .education{
+    display: flex;
+    flex-direction: column;
+   }
+   .acc-edu{
+    width: 80vw;
+   }
+   .name5{
+    margin-top: 2rem;
+   }
+   .acc-ach{
+    width: 80vw;   }
  }
