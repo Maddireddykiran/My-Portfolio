@@ -346,6 +346,7 @@ h1{
 }
 .education {
     margin-block:100px;
+
 }
 .accordion-header button{
     background-image: linear-gradient(to bottom right,#2E3192 , #1BFFFF);
@@ -442,7 +443,11 @@ h1{
     width: 200px;
      background-image: linear-gradient(to bottom right,deeppink 10%,black );
 }
-@media  (max-width:576px) and (min-width:340px) { 
+@media  (max-width:576px)  { 
+
+    .accordion-body ul li{
+        font-size:5px;
+    }
     .top-icon li{
         list-style: none;
         display: inline;
